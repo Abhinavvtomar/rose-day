@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Memories 💌</title>
+
+<style>
+body{
+  margin:0;
+  padding:30px;
+  font-family:Georgia,serif;
+  background:radial-gradient(circle at top,#1a1a2e,#0f0f1a);
+  color:#f8f8f8;
+  line-height:1.9;
+  overflow-x:hidden;
+}
+h1{
+  text-align:center;
+  color:#ff4d6d;
+}
+.heart{
+  position:fixed;
+  bottom:-10px;
+  font-size:18px;
+  animation:floatUp 6s linear forwards;
+}
+@keyframes floatUp{
+  from{transform:translateY(0);opacity:1;}
+  to{transform:translateY(-110vh);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Our Memories 💌</h1>
+
+<p>
+Every memory with you feels softly engraved in my heart.<br>
+Even the simplest moments become meaningful with you.<br><br>
+
+Your laughter stays with me longer than silence ever could.<br>
+Your presence turns distance into warmth.<br><br>
+
+Some memories arrive quietly,<br>
+but stay forever.<br><br>
+
+I hold them close,<br>
+because they remind me of you,<br>
+and everything we share.
+</p>
+
+<script>
+setInterval(()=>{
+  const h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="❤️";
+  h.style.left=Math.random()*100+"vw";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),7000);
+},400);
+</script>
+
+</body>
+</html>
