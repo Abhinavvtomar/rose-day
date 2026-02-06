@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>A Promise 🌹</title>
+
+<style>
+body{
+  margin:0;
+  padding:30px;
+  font-family:Verdana,sans-serif;
+  background:radial-gradient(circle at top,#1a1a2e,#0f0f1a);
+  color:#f8f8f8;
+  line-height:1.9;
+  overflow-x:hidden;
+}
+h1{
+  text-align:center;
+  color:#ff4d6d;
+}
+.heart{
+  position:fixed;
+  bottom:-10px;
+  font-size:18px;
+  animation:floatUp 6s linear forwards;
+}
+@keyframes floatUp{
+  from{transform:translateY(0);opacity:1;}
+  to{transform:translateY(-110vh);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>A Promise 🌹</h1>
+
+<p>
+This is a promise made quietly,<br>
+but meant sincerely.<br><br>
+
+A promise to respect,<br>
+to listen,<br>
+and to care.<br><br>
+
+Not perfection,<br>
+but honesty and effort.<br><br>
+
+Whatever tomorrow brings,<br>
+this promise stays.
+</p>
+
+<script>
+setInterval(()=>{
+  const h=document.createElement("div");
+  h.className="heart";
+  h.innerHTML="❤️";
+  h.style.left=Math.random()*100+"vw";
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),7000);
+},400);
+</script>
+
+</body>
+</html>
