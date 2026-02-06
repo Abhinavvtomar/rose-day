@@ -7,22 +7,35 @@
 <style>
 body{
   margin:0;
+  height:100vh;
   font-family:'Segoe UI',sans-serif;
   background:radial-gradient(circle at top,#1a1a2e,#0f0f1a);
   color:#f8f8f8;
+  overflow:hidden;
+}
+
+/* FULL PAGE CENTER */
+.container{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   text-align:center;
-  overflow-x:hidden;
 }
+
 h1{
-  margin-top:60px;
   color:#ff4d6d;
+  margin-bottom:10px;
 }
+
 p{
+  margin-bottom:30px;
   opacity:0.9;
 }
+
 .btn{
-  display:block;
-  margin:25px auto;
+  margin:12px 0;
   padding:16px;
   width:80%;
   max-width:320px;
@@ -32,6 +45,8 @@ p{
   background:linear-gradient(135deg,#ff4d6d,#ff758f);
   color:white;
 }
+
+/* HEARTS */
 .heart{
   position:fixed;
   bottom:-10px;
@@ -48,12 +63,17 @@ p{
 
 <body>
 
-<h1>For Aadi ❤️</h1>
-<p>Tap gently and feel the love</p>
+<div class="container">
+  <h1>For Aadi ❤️</h1>
+  <p>Tap gently and feel the love</p>
 
-<button class="btn" onclick="location.href='memory.html'">💌 Our Memories</button>
-<button class="btn" onclick="location.href='message.html'">💖 A Special Message</button>
-<button class="btn" onclick="location.href='promise.html'">🌹 A Promise</button>
+  <button class="btn" onclick="location.href='memory.html'">💌 Our Memories</button>
+  <button class="btn" onclick="location.href='message.html'">💖 A Special Message</button>
+  <button class="btn" onclick="location.href='promise.html'">🌹 A Promise</button>
+  <button class="btn" onclick="location.href='countdown.html'">⏳ Rose Day Countdown</button>
+  <button class="btn" onclick="location.href='secret.html'">🔐 Final Surprise</button>
+  <button class="btn" onclick="location.href='qr.html'">📱 Share QR</button>
+</div>
 
 <script>
 function createHeart(){
